@@ -17,7 +17,8 @@ class TestElearn():
     
     #defining the 2nd method in the class.
     def test_flighsearch(self):
-        self.driver=webdriver.Firefox(executable_path="D:\MTECH-BITS-PILANI\seleniumautomation\drivers\geckodriver-v0.29.0-win64\geckodriver.exe")
+        self.driver=webdriver.Firefox(executable_path="\drivers\geckodriver.exe")
+        # self.driver=webdriver.Firefox(executable_path="\drivers\chromedriver.exe")
         self.driver.get("https://www.makemytrip.com/")
         time.sleep(7)
         self.driver.find_element(By.CSS_SELECTOR,".chFlights")
