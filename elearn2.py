@@ -46,7 +46,7 @@ class TestELEARNPORTAL():
         self.driver.find_element(By.CSS_SELECTOR, "#module-128339 .instancename").click()
         self.driver.find_element(By.CSS_SELECTOR, ".no-overflow").click()
         time.sleep(10)
-        self.driver.close()
+        self.driver.quit()
 
 c=TestELEARNPORTAL()
 c.test_eLEARNPORTAL()
