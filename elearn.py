@@ -60,6 +60,7 @@ class TestELEARNPORTAL():
         driver.switch_to.window(vars["root"])
         driver.find_element(By.ID, "nav_drpdwn").click()
         driver.find_element(By.LINK_TEXT, "Log Out").click()
+        time.sleep(20)
         driver.quit()
 
 c=TestELEARNPORTAL()
