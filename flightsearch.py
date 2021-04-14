@@ -20,6 +20,7 @@ class TestElearn():
         self.driver=webdriver.Firefox(executable_path="\drivers\geckodriver.exe")
         # self.driver=webdriver.Firefox(executable_path="\drivers\chromedriver.exe")
         self.driver.get("https://www.makemytrip.com/")
+         self.driver.maximize_window()
         time.sleep(10)
         try:
             self.driver.find_element(By.CSS_SELECTOR,".chFlights")
