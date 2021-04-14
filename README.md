@@ -6,5 +6,5 @@ Install Python
 Download Selenium driver server files
 
 ## How to execute the project?
-`python flighsearch.py`
+`python flightsearch.py`
 
