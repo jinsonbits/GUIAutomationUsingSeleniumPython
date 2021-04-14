@@ -20,7 +20,7 @@ class TestElearn():
         self.driver=webdriver.Firefox(executable_path="\drivers\geckodriver.exe")
         # self.driver=webdriver.Firefox(executable_path="\drivers\chromedriver.exe")
         self.driver.get("https://www.makemytrip.com/")
-        time.sleep(7)
+        time.sleep(10)
         try:
             self.driver.find_element(By.CSS_SELECTOR,".chFlights")
             self.driver.find_element(By.CSS_SELECTOR, ".lhUser").click()
@@ -39,7 +39,7 @@ class TestElearn():
             self.driver.find_element(By.CSS_SELECTOR, ".DayPicker-Day--selected p:nth-child(1)").click()
             self.driver.find_element(By.CSS_SELECTOR, ".primaryBtn").click()
             self.driver.find_element(By.CSS_SELECTOR, ".filtersOuter:nth-child(3) .makeFlex:nth-child(1) > .makeFlex .box").click()
-            time.sleep(10)
+            time.sleep(15)
             self.driver.quit()
         except NoSuchElementException:
             print(NoSuchElementException)
