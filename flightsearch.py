@@ -39,7 +39,7 @@ class TestElearn():
             self.driver.find_element(By.CSS_SELECTOR, ".DayPicker-Day--selected p:nth-child(1)").click()
             self.driver.find_element(By.CSS_SELECTOR, ".primaryBtn").click()
             self.driver.find_element(By.CSS_SELECTOR, ".filtersOuter:nth-child(3) .makeFlex:nth-child(1) > .makeFlex .box").click()
-            time.sleep(15)
+            time.sleep(20)
             self.driver.quit()
         except NoSuchElementException:
             print(NoSuchElementException)
