@@ -31,7 +31,7 @@ class TestELEARNPORTAL():
         self.vars = {}
         driver=webdriver.Chrome(executable_path="D:\MTECH-BITS-PILANI\seleniumautomation\drivers\chromedriver_win32\chromedriver.exe")
         driver.get("https://elearn.bits-pilani.ac.in/")
-        driver.set_window_size(1616, 886)
+        self.driver.maximize_window()
         driver.find_element(By.LINK_TEXT, "Login").click()
         driver.find_element(By.ID, "username").click()
         driver.find_element(By.ID, "username").send_keys("2020mt93149@wilp.bits-pilani.ac.in")
@@ -60,7 +60,8 @@ class TestELEARNPORTAL():
         driver.switch_to.window(vars["root"])
         driver.find_element(By.ID, "nav_drpdwn").click()
         driver.find_element(By.LINK_TEXT, "Log Out").click()
-        driver.close()
+        time.sleep(10)
+        driver.quit()
 
 c=TestELEARNPORTAL()
 
